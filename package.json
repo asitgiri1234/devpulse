@@ -1,0 +1,22 @@
+{
+  "name": "devpulse",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "backend/index.js",
+  "scripts": {
+    "dev:backend": "node backend/index.js",
+    "dev:frontend": "npm run dev --prefix frontend",
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "DevPulse intern MVP",
+  "dependencies": {
+    "concurrently": "^9.2.1",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "groq-sdk": "^1.1.2",
+    "xlsx": "^0.18.5"
+  }
+}
